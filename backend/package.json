@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmitaagarwal4/portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "tech"
+  ],
+  "author": "Asmita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asmitaagarwal4/portfolio/issues"
+  },
+  "homepage": "https://github.com/asmitaagarwal4/portfolio#readme",
+  "dependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
