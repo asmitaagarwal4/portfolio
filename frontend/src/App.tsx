@@ -5,6 +5,8 @@ import Header from './component/Header';
 import Sidebar from './component/Sidebar';
 import About from './component/About';
 import Projects from './component/Projects';
+import Skills from './component/Skills';
+import Badges from './component/Badges';
 
 function App() {
   
@@ -17,6 +19,8 @@ function App() {
     {/* Add more components as needed */}
     {/* <div className=''>  </div> */}
     <Projects/>
+    <Skills/>
+    <Badges/>
     </div>
   )
 }

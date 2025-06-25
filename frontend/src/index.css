@@ -119,3 +119,56 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .animate-scroll-right {
+    animation: scroll-right 40s linear infinite;
+  }
+
+  .animate-scroll-left {
+    animation: scroll-left 40s linear infinite;
+  }
+
+  .pause-animation {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .animate-scroll-right,
+  .animate-scroll-left {
+    animation-duration: 25s;
+  }
+}
+
+@media (max-width: 480px) {
+  .animate-scroll-right,
+  .animate-scroll-left {
+    animation-duration: 20s;
+  }
+}
+
+/* Smooth transitions for category changes */
+.badge-container {
+  transition: all 0.3s ease-in-out;
+}
+
